@@ -17,5 +17,168 @@ body {
   position: relative;
   width: 800px;
   height: 600px;
-  background-color: white;
+  background-color: #C7A6C0;
+  overflow: hidden;
+}
+
+#ocean {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  background-color: #236E86;
+  bottom: 0;
+  left: 0;
+  /* z-index: 1; */
+}
+
+#sun-glow {
+  position: absolute;
+  top: -119px;
+  right: -254px;
+  border-radius: 818px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFB800 0%, rgba(255, 138, 0, 0.00) 100%);
+  width: 818px;
+  height: 818px;
+}
+
+#sun {
+  width: 140px;
+  height: 140px;
+  background-color: #FEE5A4;
+  position: absolute;
+  top: 220px;
+  right: 85px;
+  border-radius: 50%;
+}
+
+#rocks {
+  position: absolute;
+  top: 224px;
+  left: 0;
+}
+
+/* BOAT */
+#cabin {
+  position: absolute;
+  bottom: 168px;
+  left: 61px;
+}
+
+#hull {
+  position: absolute;
+  bottom: 88px;
+  left: 59px;
+}
+
+#list {
+  position: absolute;
+  bottom: 163px;
+  left: 54px;
+  width: 434px;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #824B24;
+}
+
+.stripe {
+  height: 9px;
+  background-color: #72CBDF;
+  border-radius: 10px;
+  position: absolute;
+  animation: waves 0.5s infinite alternate ease;
+}
+
+@keyframes waves {
+  to {
+    transform: translateX(-10px);
+  }
+  
+}
+
+.stripe-1 {
+  width: 120px;
+  bottom: 101px;
+  left: 20px;
+}
+
+.stripe-2 {
+  width: 385px;
+  bottom: 84px;
+  left: -10px;
+  z-index: 2;
+}
+
+.stripe-3 {
+  width: 120px;
+  bottom: 66px;
+  left: -10px;
+}
+
+.stripe-4 {
+  width: 120px;
+  bottom: 66px;
+  left: 125px;
+}
+
+.stripe-5 {
+  width: 30px;
+  bottom: 66px;
+  left: 262px;
+}
+
+.window {
+  background-color: #D2F8FB;
+  position: absolute;
+}
+
+.window-1 {
+  top: 11px;
+  left: 146px;
+  width: 58px;
+  height: 36px;
+  border-radius: 4px;
+}
+.window-2 {
+  top: 65px;
+  left: 224px;
+  width: 37px;
+  height: 13px;
+  border-radius: 10px;
+}
+.window-3 {
+  top: 65px;
+  left: 285px;
+  width: 37px;
+  height: 13px;
+  border-radius: 10px;
+}
+
+#mattias {
+  position: absolute;
+  top: 21px;
+  left: 170px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #F3E7BB;
+}
+
+#hair {
+  position: absolute;
+  background-color: #FF8A00;
+  width: 23px;
+  height: 11px;
+  border-radius: 100%;
+  top: -2px;
+  left: 1px;
+}
+
+#eyes {
+  position: absolute;
+  background-color: #313131;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  top: 11px;
+  left: 17px;
 }
